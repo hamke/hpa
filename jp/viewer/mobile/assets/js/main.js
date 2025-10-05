@@ -12,6 +12,7 @@ if ( typeof siteUrl == 'undefined' ) {
   if ( urlInfo == null || urlInfo == '' ) {
     var siteUrl = frontpage; // A variable defined on the beginning of the page
     window.history.replaceState({}, document.title, clean_uri);
+    var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="100%;"></iframe>';
   } else {
     for ( var d = 0; d < full_url_allowed.length; d++ ) {
       if ( full_url_allowed[d]['fixed'] == 'yes' ) {
@@ -22,11 +23,11 @@ if ( typeof siteUrl == 'undefined' ) {
         closeOverlay();
       }
     }
+    var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="500px;"></iframe>';
   }
 }
 
 // var fullUrl = 'https://' + siteUrl; // Unnecessary
-var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="500px;"></iframe>';
 var footerUrl = '<a href="https://' + siteUrl + '" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> ' + siteUrl + ' <i class="fas fa-arrow-right"></i></a>';
 var element = document.getElementById("placeholder");
 document.getElementById("iframeTemplate").innerHTML = iframeContent;

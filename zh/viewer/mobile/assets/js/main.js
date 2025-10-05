@@ -13,6 +13,8 @@ if ( typeof siteUrl == 'undefined' ) {
     var siteUrl = frontpage; // A variable defined on the beginning of the page
     window.history.replaceState({}, document.title, clean_uri);
     var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="100%;"></iframe>';
+    jQuery(".responsive a").removeClass("active");
+    jQuery(".responsive a.desktop").addClass("active");
   } else {
     for ( var d = 0; d < full_url_allowed.length; d++ ) {
       if ( full_url_allowed[d]['fixed'] == 'yes' ) {

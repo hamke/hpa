@@ -25,7 +25,11 @@ if ( typeof siteUrl == 'undefined' ) {
         closeOverlay();
       }
     }
-    var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="500px;"></iframe>';
+    if ( jQuery(window).width() > 500 ) {
+      var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="500px;"></iframe>';
+    } else {
+      var iframeContent = '<iframe id="iframe" src="https://' + siteUrl + '" frameborder="0" width="100%;"></iframe>';
+    }
   }
 }
 
@@ -61,7 +65,13 @@ function showNewData( newUrl ) {
   }
   let new_uri = clean_uri + '?url=' + newUrl;
   window.history.replaceState({}, document.title, new_uri);
-  let iframeContent = '<iframe id="iframe" onload="onLoadCallback()" src="https://' + newUrl + '/" frameborder="0" width="500px;"></iframe>';
+  
+  if ( jQuery(window).width() > 500 ) {
+    var iframeContent = '<iframe id="iframe" onload="onLoadCallback()" src="https://' + newUrl + '/" frameborder="0" width="500px"></iframe>';
+  } else {
+    var iframeContent = '<iframe id="iframe" onload="onLoadCallback()" src="https://' + newUrl + '/" frameborder="0" width="100%;"></iframe>';
+  }
+
   let footerUrl = '<a href="https://' + newUrl + '/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> ' + newUrl + ' <i class="fas fa-arrow-right"></i></a>';
   let element = document.getElementById("placeholder");
   document.getElementById("iframeTemplate").innerHTML = iframeContent;

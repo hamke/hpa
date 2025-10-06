@@ -6,8 +6,8 @@ const message = [
   //   "time_end": ""
   // },
   // {
-  //   "url": "www.wp-viewer.com/main",
-  //   "msg": "Hello wp-viewer.com",
+  //   "url": "www.homepageasia.com/main",
+  //   "msg": "Hello homepageasia.com",
   //   "time_start": "",
   //   "time_end": ""
   // },

@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME PAGE ASIA - THE WORLD REDEFINED</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/img/favicon.ico" />
+    <!-- <meta name="robots" content="noindex, nofollow"> -->
+    <!-- <meta http-equiv="refresh" content="0; URL=./viewer/"> -->
+    <title>HomePageAsia - The World Redefined</title>
+    <meta property="og:title" content="HomePageAsia - The World Redefined" />
+    <meta property="og:description" content="HomePageAsia - The World Redefined" />
+    <meta property="og:url" content="https://www.homepageasia.com/" />
+    <meta property="og:image" content="./assets/img/globaltalkasia-homepageasia-cover-01-800x400.png"/>
+    <meta property="og:site_name" content="HomePageAsia" />
+    <meta property="og:type" content="website" />
+    <meta name="naver-site-verification" content="XXXXXXXX"/>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Analytics( gtag.js / HOMEPAGEASIA.COM ): Start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXX-1');
+    </script>
+    <!-- Naver Analytics( HOMEPAGEASIA.COM ): Start -->
+    <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+    <script type="text/javascript">
+      if(!wcs_add) var wcs_add = {};
+      wcs_add["wa"] = "XXXXXXXX";
+      if(window.wcs) {
+        wcs_do();
+      }
+    </script>
+    <!-- Naver Analytics: End -->
     <style>
         * {
             margin: 0;
@@ -48,18 +77,18 @@
             animation: expandCircle 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
         }
 
-/* 기존 .circle-video 스타일을 다음으로 변경 */
-.circle-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-}
+        /* 기존 .circle-video 스타일을 다음으로 변경 */
+        .circle-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
 
         @keyframes expandCircle {
             0% {
@@ -180,20 +209,20 @@
             overflow: hidden;
         }
 
-/* 기존 .hero-video 스타일은 이미 올바르게 설정되어 있음 */
-.hero-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-    opacity: 0;
-    animation: fadeIn 1s ease 3s forwards;
-}
+        /* 기존 .hero-video 스타일은 이미 올바르게 설정되어 있음 */
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            opacity: 0;
+            animation: fadeIn 1s ease 3s forwards;
+        }
 
         .hero-overlay {
             position: absolute;

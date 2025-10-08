@@ -271,27 +271,27 @@ a {
 }
 
 .purchase a {
-  background-color: #ffa339;
-  background: #ffa339;
-  border-color: #ffa339;
-  box-shadow: 0 1px 0 #ffa339 inset;
+  background-color: #515f9a;
+  background: #515f9a;
+  border-color: #515f9a;
+  box-shadow: 0 1px 0 #515f9a inset;
   color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 3px #ff8e0b
+  text-shadow: 1px 1px 3px #42518c
 }
 
 .purchase a:hover {
-  background-color: #ff8e0b;
-  background: #ff8e0b;
-  border-color: #ff8e0b;
-  box-shadow: 0 1px 0 #ff8e0b inset;
+  background-color: #42518c;
+  background: #42518c;
+  border-color: #42518c;
+  box-shadow: 0 1px 0 #42518c inset;
   color: #fff;
-  text-shadow: 2px 1px 3px #ff8e0b
+  text-shadow: 2px 1px 3px #42518c
 }
 
 .purchase a:focus {
-  border-color: #ff8e0b;
-  box-shadow: 0 1px 0 #ff8e0b inset, 1px 1px 3px #ff8e0b
+  border-color: #42518c;
+  box-shadow: 0 1px 0 #42518c inset, 1px 1px 3px #42518c
 }
 
 .purchase a img {
@@ -302,27 +302,27 @@ a {
 }
 
 .purchase #wp-analytics {
-  background-color: #ff8b4c;
-  background: #ff8b4c;
-  border-color: #ff8b4c;
-  box-shadow: 0 1px 0 #ff8b4c inset;
+  background-color: #36447b;
+  background: #36447b;
+  border-color: #36447b;
+  box-shadow: 0 1px 0 #36447b inset;
   color: #fff;
   text-decoration: none;
-  text-shadow: 1px 1px 3px #ff772d;
+  text-shadow: 1px 1px 3px #243061;
 }
 
 .purchase #wp-analytics:hover {
-  background-color: #ff772d;
-  background: #ff772d;
-  border-color: #ff772d;
-  box-shadow: 0 1px 0 #ff772d inset;
+  background-color: #243061;
+  background: #243061;
+  border-color: #243061;
+  box-shadow: 0 1px 0 #243061 inset;
   color: #fff;
-  text-shadow: 2px 1px 3px #ff772d
+  text-shadow: 2px 1px 3px #243061
 }
 
 .purchase #wp-analytics:focus {
-  border-color: #ff8b4c;
-  box-shadow: 0 1px 0 #ff8b4c inset, 1px 1px 3px #ff772d
+  border-color: #36447b;
+  box-shadow: 0 1px 0 #36447b inset, 1px 1px 3px #243061
 }
 
 .purchase #language-selector {
@@ -392,8 +392,8 @@ a {
 }
 
 .close a:focus {
-  border-color: #ffa339;
-  box-shadow: 0 1px 0 #ffa339 inset, 1px 1px 2px rgba(0, 0, 0, .4)
+  border-color: #515f9a;
+  box-shadow: 0 1px 0 #515f9a inset, 1px 1px 2px rgba(0, 0, 0, .4)
 }
 
 img.preview {
@@ -435,7 +435,7 @@ img.preview {
   float: right;
   font-size: 11px;
   font-weight: 700;
-  background: #ffa339;
+  background: #515f9a;
   border-radius: 2px;
   padding: 3px 8px;
   color: #fff;
